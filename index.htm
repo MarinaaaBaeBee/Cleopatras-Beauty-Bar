@@ -6,107 +6,323 @@
   <meta name="author" content="Marina Shafek">
   <meta name="description" content="beauty services">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-image: url(images/frontdesk.png);
+      background-size: cover;
+      background-attachment: fixed;
+      color: red;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      width: 1000px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: white;
+      font-size: 28px;
+      margin-top: 20px;
+    }
+
+    h3 {
+      color: white;
+      font-size: 22px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: red;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    nav {
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 10px;
+    }
+
+    .nav-icon {
+      width: 2%;
+      vertical-align: middle;
+    }
+
+    main {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px;
+      position: relative;
+    }
+
+    .svg-title {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .logo {
+      display: block;
+      margin: 20px auto;
+      width: 15%;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .intro-text {
+      background-color: black;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    hr {
+      width: 50%;
+      border: 1px solid white;
+      margin: 20px auto;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0;
+    }
+
+    .service-image {
+      width: 20%;
+      margin: 0 20px;
+    }
+
+    .left-text {
+      text-align: left;
+    }
+
+    .note {
+      font-weight: bold;
+      font-size: 14px;
+      text-align: left;
+    }
+    :root {
+    --primary-bg: rgba(0, 0, 0, 0.5);
+    --secondary-bg: beige;
+    --accent-color: white;
+    --text-dark: black;
+    --highlight-color: rgba(56, 4, 4, 0.856);
+    --default-padding: 20px;
+    --rounded-corners: 10px;
+  }
+    footer {
+      background-color: beige;
+      color: black;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    footer h4 {
+      color: rgba(56, 4, 4, 0.856);
+    }
+
+    .footer-label {
+      font-weight: bold;
+      color: rgba(56, 4, 4, 0.856);
+    }
+
+    .back-to-top {
+      width: 5%;
+      margin-top: 20px;
+    }
+      /* ID Selector */
+  #wrapper {
+    background-color: var(--primary-bg);
+    padding: var(--default-padding);
+    border-radius: var(--rounded-corners);
+    margin: 20px;
+  }
+
+  /* ID Selector */
+  #social {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--highlight-color);
+  }
+  /* Custom user-defined class */
+  .important {
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    padding: 10px;
+    border-left: 5px solid gold;
+  }
+
+  /* Another custom user-defined class */
+  .highlight {
+    color: white;
+    background-color: rgba(56, 4, 4, 0.85);
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  </style>
 </head>
 
-<body style="background-image:url(images/frontdesk.png); background-size: cover; background-attachment: fixed; color: red">
+<body>
+
 <header></header>
+
 <h1 id="Top"></h1>
+<!-- Navigation menu starts here -->
 <nav>
- <a href="index.htm">Home</a> 
- <img src="images/home.jpg" alt="Home icon" style="width: 2%; vertical-align: middle;">|
- <a href="aboutus.htm">About Us</a> |
- <a href="appointments.htm">Appointments</a> |
- <a href="products.htm">Products</a> |
- <a href="reviews.htm">Reviews</a> |
- <a href="#services">Services</a><br>
+  <a href="index.htm">Home</a>
+  <img src="images/home.jpg" alt="Home icon" class="nav-icon"> |
+  <a href="aboutus.htm">About Us</a> |
+  <a href="appointments.htm">Appointments</a> |
+  <a href="products.htm">Products</a> |
+  <a href="reviews.htm">Reviews</a> |
+  <a href="#services">Services</a>
 </nav>
-<main>
-<span style="position: absolute; top: 10px; right: 10px;">
-  <svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
-    <text x="50%" y="50%"
-          font-size="28"
-          fill="white"
-          text-anchor="middle"
-          dominant-baseline="middle"
-          style="font-family: serif; letter-spacing: 2px;">
-      Beauty Bar
-    </text>
-  </svg>
-</span>
-<img src="images/logo.jpg" alt="Cleopatra's Beauty Bar Logo" style="display: block; margin-left: auto; margin-right: auto; width: 15%;">
- <h1 style="color:white; text-align: Center;">Cleopatra's Beauty Bar</h1>
- <p style="text-align: Center; background-color:black;">
-<i>We specialize in all thing's beauty. Whether it be your makeup, hair, lashes, or nails, we will make you feel at your best!
-Here at <b>Cleopatra's Beauty Bar</b>, we ensure that all guest's expectations are met and they leave us feeling better than ever.</i><br>
-<hr style="width: 50%; border: 1px solid white;"><br>
+<div id="wrapper">
+<!-- Main content area starts here -->
+ <main>
 
-<span class="image-row" style="display: flex; justify-content: center; align-items: center;">
-  <img src="images/hair.jpg"
-       onmouseover="this.src='images/hair2.jpg'"
-       onmouseout="this.src='images/hair.jpg'"
-       alt="Hair Services"
-       style="width:20%; margin:0 20px;">
+  <span class="svg-title">
+    <svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+      <text x="50%" y="50%"
+            fill="white"
+            text-anchor="middle"
+            dominant-baseline="middle"
+            style="font-family: serif; letter-spacing: 2px;">
+        Beauty Bar
+      </text>
+    </svg>
+  </span>
 
-  <img src="images/nails.jpg"
-       onmouseover="this.src='images/nails2.jpg'"
-       onmouseout="this.src='images/nails.jpg'"
-       alt="Nail Services"
-       style="width:20%; margin:0 20px;">
+  <img src="images/logo.jpg" alt="Cleopatra's Beauty Bar Logo" class="logo">
 
-  <img src="images/lashes.jpg"
-       onmouseover="this.src='images/lashes2.jpg'"
-       onmouseout="this.src='images/lashes.jpg'"
-       alt="Lash Services"
-       style="width:20%; margin:0 20px;">
-</span>
-   
- <h2 id="services" style="color:white; text-align: center;">Services</h2>
- <p style="text-align: center;">We offer many different services, see below and find the perfect service for you!</p>
- <p style="text-align: center;"><a href="#hair">Hair</a> | <a href="#mani-pedi">Mani/Pedi</a> | <a href="#lashes">Lashes</a> | <a href="#makeup">Make Up</a> | <a href="#locs">Locs</a></p>
- <h3 id="hair" style="color: white; text-align: center;">Women's Hair Services</h3>
- <p style="text-align: center;">Hair Cut - $35<br>
+  <p class="center-text intro-text">
+    <i>
+      We specialize in all thing's beauty. Whether it be your makeup, hair, lashes, or nails,
+      we will make you feel at your best! Here at <b>Cleopatra's Beauty Bar</b>, we ensure that
+      all guest's expectations are met and they leave us feeling better than ever.
+    </i>
+  </p>
+
+  <hr>
+
+  <span class="image-row">
+    <img src="images/hair.jpg"
+         onmouseover="this.src='images/hair2.jpg'"
+         onmouseout="this.src='images/hair.jpg'"
+         alt="Hair Services"
+         class="service-image">
+
+    <img src="images/nails.jpg"
+         onmouseover="this.src='images/nails2.jpg'"
+         onmouseout="this.src='images/nails.jpg'"
+         alt="Nail Services"
+         class="service-image">
+
+    <img src="images/lashes.jpg"
+         onmouseover="this.src='images/lashes2.jpg'"
+         onmouseout="this.src='images/lashes.jpg'"
+         alt="Lash Services"
+         class="service-image">
+  </span>
+
+  <p class="center-text">
+    We offer many different services, see below and find the perfect service for you!
+  </p>
+
+  <p class="center-text">
+    <a href="#hair">Hair</a> |
+    <a href="#mani-pedi">Mani/Pedi</a> |
+    <a href="#lashes">Lashes</a> |
+    <a href="#makeup">Make Up</a> |
+    <a href="#locs">Locs</a>
+  </p>
+
+  <h3 id="hair">Women's Hair Services</h3>
+  <p class="left-text">
+    Hair Cut - $35<br>
     Cut & Blow Dry - $65<br>
     Cut, Blow Dry, & Style - $90<br>
     Up Do - $75<br>
     Retouch - $70<br>
-    Full highlights - $150<br>
-    Partial Highlights - $75<br>
- </p>
- <h3 id="mani-pedi" style="color:white; text-align: center;">Mani/Pedi Services</h3>
- <p style="text-align: center;">Full Set Acrylic - $60 to $120<br>
+    Full Highlights - $150<br>
+    Partial Highlights - $75
+  </p>
+
+  <h3 id="mani-pedi">Mani/Pedi Services</h3>
+  <p class="left-text">
+    Full Set Acrylic - $60 to $120<br>
     Full Set Polygel - $40 to $85<br>
     Acrylic Pedicure - $55<br>
-    Gel Pedicure - $35<br>
- </p>
- <h3 id="lashes" style="color:white; text-align: center;">Lashes and Eyebrows</h3>
- <p style="text-align: center;">Brow Waxing - $12<br>
-     Lip Waxing - $12<br>
-     Brow Tinting - $30<br>
-     Full Set Lashes - $120<br>
- </p>
- <h3 id="makeup" style="color:white; text-align: center;">Make Up Application</h3>
- <p style="text-align: center;">Full Face - $100<br>
-    Eye Makeup - $60</p>
- <h3 id="locs" style="color:white; text-align: center;">Locs, Braids, and Twists</h3>
- <p style="font-weight: bold; font-size: 14px; text-align: center;">Please consult with a stylist for pricing</p>
+    Gel Pedicure - $35
+  </p>
+
+  <h3 id="lashes">Lashes and Eyebrows</h3>
+  <p class="left-text">
+    Brow Waxing - $12<br>
+    Lip Waxing - $12<br>
+    Brow Tinting - $30<br>
+    Full Set Lashes - $120
+  </p>
+
+  <h3 id="makeup">Make Up Application</h3>
+  <p class="left-text">
+    Full Face - $100<br>
+    Eye Makeup - $60
+  </p>
+
+  <h3 id="locs">Locs, Braids, and Twists</h3>
+  <p class="important">
+    Please consult with a stylist for pricing
+  </p>
+  <p class="highlight">
+    Book your appointment today!
+  </p>
+
 </main>
-<footer style="background-color:beige; color:black; text-align: center; padding: 10px; margin-top: 20px;">
-   <h3 style="color: rgba(56, 4, 4, 0.856)">Location & Hours</h3>
+<!-- Main content area ends here -->
+<!-- Footer section with contact information -->
+ <footer>
+
+  <h4>Location & Hours</h4>
   123 Beauty Lane, Sarasota, FL 34236<br>
   9:00 AM - 7:00 PM Monday - Saturday<br>
-<h3 style="color: rgba(56, 4, 4, 0.856)">Contact us!</h3>
- <span style="font-weight: bold; color: rgba(56, 4, 4, 0.856);">Email:</span>
- <a href="mailto:Shafek.marina@yahoo.com">Shafek.marina@yahoo.com</a><br>
- <span style="font-weight: bold; color: rgba(56, 4, 4, 0.856)">Phone:</span>
- <a href="tel:9416571234">(941) 657-1234</a><br>
- <span style="font-weight: bold; color: rgba(56, 4, 4, 0.856)">Follow Us on Instagram:</span>
- <a href="https://www.instagram.com/cleopatrasbeautybar941">Instagram</a><br>
-<h1 id="top"></h1>
-<a href="#Top">
-<img src="images/page up.webp" alt="page up arrow" style="width: 5%; float: center; margin-right: 20px;"></a>
-</footer>
+
+  <h4>Contact Us</h4>
+
+  <span class="footer-label">Email:</span>
+  <a href="mailto:Shafek.marina@yahoo.com">Shafek.marina@yahoo.com</a><br>
+
+  <span class="footer-label">Phone:</span>
+  <a href="tel:9416571234">(941) 657-1234</a><br>
+<div id="social">
+  <span class="footer-label">Follow Us on Instagram:</span>
+  <a href="https://www.instagram.com/cleopatrasbeautybar941">Instagram</a><br>
+  </div>
+  <a href="#Top">
+    <img src="images/page up.webp" alt="page up arrow" class="back-to-top">
+  </a>
+  </footer>
+  </div>
 </body>
 </html>
+
 
 
 
