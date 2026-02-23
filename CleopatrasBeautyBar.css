@@ -32,6 +32,16 @@
       margin-top: 10px;
     }
 
+.products-page p,
+.products-page li,
+.products-page h1,
+.products-page h2,
+.products-page h3 {
+  color: white;
+}
+
+
+
     /* Navigation */
 nav {
   padding: 10px 20px;
@@ -406,5 +416,6 @@ nav ul li.selected a {
     border-radius: 6px;
     display: inline-block;
   }
+
 
 
