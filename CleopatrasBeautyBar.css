@@ -423,4 +423,21 @@ nav ul li.selected a {
   color: white;
 }
 
+/* PRODUCTS PAGE DEFINITION LIST */
+.products-page dl dt {
+  color: gold;
+  font-family: serif;
+  font-size: 20px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.products-page dl dd {
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+
 
