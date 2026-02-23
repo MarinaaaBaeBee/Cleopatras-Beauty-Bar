@@ -442,51 +442,9 @@ nav ul li.selected a {
   font-size: 1.1em;
 }
 
-/* DEFINE MOBILE DEVICES */
-nav {width:100%; text-align:center}
-nav a {display:block; width:30%;
-text-decoration:none;}
-/* display:block = top to bottom */
-nav li {list-style:none}
-nav li a {border:2px #AAA solid; padding:6px}
-@media only screen and (min-width:640px){
-nav a {display:inline}
-/* display:inline = left to right */
-nav li {display:inline; padding:0 18px}
-} /* Close 640 Media Query for larger screens */
 
-/* FORCE CONSISTENT NAV BUTTON SIZE */
-.nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 10px;
-}
 
-.nav-list li {
-  /* makes each item size to its content cleanly */
-}
 
-.nav-list a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;      /* controls button size */
-  font-size: 18px;
-  line-height: 1.2;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  box-sizing: border-box; /* prevents weird shrink */
-}
-
-.nav-icon {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;         /* icon won’t squish text */
-}
 
 
 
