@@ -137,6 +137,7 @@ nav ul li.selected a {
     grid-template-columns: 1fr 1fr; /* two equal columns */
     gap: 10px 40px;
     max-width: 700px;
+    margin-bottom: 5%
   }
 
   /* Remove default bullets */
@@ -437,7 +438,20 @@ nav ul li.selected a {
   margin-left: 20px;
   margin-bottom: 10px;
   line-height: 1.5;
+  font-size: 1.1em;
 }
 
+/* DEFINE MOBILE DEVICES */
+nav {width:100%; text-align:center}
+nav a {display:block; width:30%;
+text-decoration:none;}
+/* display:block = top to bottom */
+nav li {list-style:none}
+nav li a {border:2px #AAA solid; padding:6px}
+@media only screen and (min-width:640px){
+nav a {display:inline}
+/* display:inline = left to right */
+nav li {display:inline; padding:0 18px}
+} /* Close 640 Media Query for larger screens */
 
 
