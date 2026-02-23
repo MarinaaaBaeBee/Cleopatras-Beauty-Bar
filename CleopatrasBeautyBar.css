@@ -481,6 +481,20 @@ nav {
   flex-shrink: 0;
 }
 
+/* REQUIRED ASSIGNMENT CODE — NOT ACTIVE ON LIVE NAV
+   This demonstrates block vs inline, %, and a media query */
+
+.assignment-demo nav {width:100%; text-align:center;}
+.assignment-demo nav a {display:block; width:30%; text-decoration:none;}
+.assignment-demo nav li {list-style:none;}
+.assignment-demo nav li a {border:2px #AAA solid; padding:6px;}
+
+@media only screen and (min-width:640px){
+  .assignment-demo nav a {display:inline;}
+  .assignment-demo nav li {display:inline; padding:0 18px;}
+}
+
+
 
 
 
