@@ -98,6 +98,7 @@ nav {
 .nav-list li {
   display: flex;
   align-items: center;
+  gap: 6px;
 }
 
 .nav-list a {
@@ -453,5 +454,6 @@ nav a {display:inline}
 /* display:inline = left to right */
 nav li {display:inline; padding:0 18px}
 } /* Close 640 Media Query for larger screens */
+
 
 
