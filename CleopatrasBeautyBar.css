@@ -409,22 +409,6 @@ nav ul li.selected a {
     display: inline-block;
   }
 
-
-/* PRODUCTS PAGE TEXT COLORS */
-.products-page h1,
-.products-page h2,
-.products-page h3 {
-  color: gold;
-  font-family: serif;
-  letter-spacing: 1px;
-}
-
-.products-page p,
-.products-page li,
-.products-page span {
-  color: white;
-}
-
 /* PRODUCTS PAGE DEFINITION LIST */
 .products-page dl dt {
   color: gold;
@@ -528,6 +512,16 @@ nav {
   line-height: 1.4;
   color: white;
 }
+.products-two-column {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;   /* THIS centers the whole section */
+  padding: 20px 0;
+}
+
+
 
 
 
