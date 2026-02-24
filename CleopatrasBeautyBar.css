@@ -514,6 +514,24 @@ nav {
 }
 
 
+/* TWO-COLUMN PRODUCT LIST */
+.product-columns {
+  columns: 2;              /* creates two columns */
+  column-gap: 40px;        /* space between columns */
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+}
+
+.product-columns ol {
+  padding-left: 20px;      /* keeps Roman numerals aligned */
+}
+
+.product-columns li {
+  break-inside: avoid;     /* prevents items from splitting between columns */
+  margin-bottom: 15px;
+  color: white;            /* ensures readability */
+  line-height: 1.4;
+}
 
 
 
