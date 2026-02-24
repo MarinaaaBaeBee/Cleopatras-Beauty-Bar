@@ -494,6 +494,24 @@ nav {
   .assignment-demo nav li {display:inline; padding:0 18px;}
 }
 
+/* PRODUCTS PAGE — READABLE LUXURY COLOR PALETTE */
+.products-page h1,
+.products-page h2,
+.products-page h3 {
+  color: gold;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+.products-page p,
+.products-page li,
+.products-page dd,
+.products-page dt,
+.products-page span,
+.products-page ol,
+.products-page ul {
+  color: white;
+}
 
 
 
