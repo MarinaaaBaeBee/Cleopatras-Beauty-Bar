@@ -513,25 +513,22 @@ nav {
   color: white;
 }
 
-
-/* TWO-COLUMN PRODUCT LIST */
-.product-columns {
-  columns: 2;              /* creates two columns */
-  column-gap: 40px;        /* space between columns */
+/* TWO-COLUMN PRODUCT GRID */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* two columns */
+  gap: 20px 40px;                  /* row gap, column gap */
   max-width: 900px;
   margin: 0 auto 40px auto;
+  padding-left: 30px;              /* keeps Roman numerals visible */
 }
 
-.product-columns ol {
-  padding-left: 20px;      /* keeps Roman numerals aligned */
-}
-
-.product-columns li {
-  break-inside: avoid;     /* prevents items from splitting between columns */
-  margin-bottom: 15px;
-  color: white;            /* ensures readability */
+.products-grid li {
+  margin-bottom: 10px;
   line-height: 1.4;
+  color: white;
 }
+
 
 
 
