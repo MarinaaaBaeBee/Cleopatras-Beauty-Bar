@@ -280,6 +280,14 @@ footer {
 }
 
 
+.services img {
+    width: 300px;        /* normal, elegant size */
+    height: auto;        /* keeps proportions */
+    border-radius: 10px; /* optional luxury touch */
+    object-fit: cover;   /* prevents distortion */
+    display: block;
+    margin: 0 auto;      /* centers each image */
+}
 
 
 
