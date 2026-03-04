@@ -263,7 +263,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  justify-items: center;
+  align-items: start !important;
 }
 
 .service-card {
@@ -286,6 +286,18 @@ footer {
   display: block;
   margin: 0 auto 12px;
 }
+
+.service-card {
+  height: auto !important;
+}
+
+.service-card img {
+  width: 250px !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  align-self: start !important;
+}
+
 
 
 
