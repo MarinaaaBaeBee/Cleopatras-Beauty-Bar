@@ -246,13 +246,10 @@ footer {
 /* =========================
    RESPONSIVE DEMO
 ========================= */
-.assignment-demo nav a { display:block; width:30%; }
-.assignment-demo nav li { list-style:none; }
-
-@media (min-width: 640px) {
-  .assignment-demo nav a { display:inline; }
-  .assignment-demo nav li { display:inline; padding: 0 18px; }
-}
+body {max-width:1100px; margin:auto; padding:20px}
+img {max-width:100%; height:auto;}
+section {text-align:center}
+figure {width:320px; display:inline-block; margin:15px; text-align:center}
 
 /* =========================
    SERVICES PAGE
@@ -297,6 +294,7 @@ footer {
   object-fit: cover !important;
   align-self: start !important;
 }
+
 
 
 
