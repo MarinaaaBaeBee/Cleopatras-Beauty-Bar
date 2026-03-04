@@ -295,6 +295,14 @@ figure {width:320px; display:inline-block; margin:15px; text-align:center}
   align-self: start !important;
 }
 
+body.services-page {
+  background-image: url('images/salon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 
 
 
