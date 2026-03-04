@@ -231,8 +231,8 @@ nav ul li.selected a {
    FOOTER
 ========================= */
 footer {
-  background-color: var(--secondary-bg);
-  color: var(--text-dark);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
@@ -302,6 +302,7 @@ body.services-page {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
 
 
 
