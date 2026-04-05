@@ -1,0 +1,30 @@
+<!-- Contact Form -->
+<form name="contactForm" id="contactForm" action="FormProcess.php" method="post">
+    <!-- Hidden fields for email subject + redirect -->
+    <input type="hidden" name="subject" value="Cleopatra's Beauty Bar Contact Submission">
+    <input type="hidden" name="redirect" value="contactSent.html">
+
+    <div class="contact-form-container">
+        <h2 class="contact-title">Contact Cleopatra’s Beauty Bar</h2>
+
+        <label for="FirstName">* First Name</label>
+        <input type="text" name="FirstName" id="FirstName" required>
+
+        <label for="LastName">* Last Name</label>
+        <input type="text" name="LastName" id="LastName" required>
+
+        <label for="Telephone">Telephone</label>
+        <input type="text" name="Telephone" id="Telephone">
+
+        <label for="Email">* Email</label>
+        <input type="email" name="Email" id="Email" required>
+
+        <label for="Comments">Comments</label>
+        <textarea name="Comments" id="Comments" rows="5"></textarea>
+
+        <div class="button-row">
+            <input type="reset" value="Reset" class="btn-reset">
+            <input type="submit" value="Submit" class="btn-submit">
+        </div>
+    </div>
+</form>
