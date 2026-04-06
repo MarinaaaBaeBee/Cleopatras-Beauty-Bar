@@ -475,7 +475,27 @@ select option {
 }
 
 
+/* FORCE checkboxes + radios to display correctly */
+.check-row input[type="checkbox"],
+.radio-row input[type="radio"] {
+    all: revert; /* resets browser defaults so they show normally */
+    accent-color: #d8b97a; /* Cleopatra gold */
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
 
+/* Align text with the input */
+.check-row,
+.radio-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    font-size: 17px;
+    color: #e8d3a2;
+    cursor: pointer;
+}
 
 
 
