@@ -422,7 +422,29 @@ textarea:focus {
     }
 }
 
+/* Style dropdown to match luxury inputs */
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(191, 161, 90, 0.5);
+    border-radius: 8px;
+    background: #1a1815;
+    color: #f5e9c9;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+select:focus {
+    outline: none;
+    border-color: #d8b97a;
+    box-shadow: 0 0 8px rgba(216, 185, 122, 0.4);
+}
+
+select option {
+    background: #1a1815;
+    color: #f5e9c9;
+}
 
 
 
