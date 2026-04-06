@@ -497,10 +497,31 @@ select option {
     cursor: pointer;
 }
 
+/* Ensure all form groups display normally */
+.form-group {
+    display: block;
+    margin-bottom: 22px;
+}
+
+/* Ensure all text inputs show correctly */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 
-
-
+.check-row input[type="checkbox"],
+.radio-row input[type="radio"] {
+    all: revert;
+    accent-color: #d8b97a;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
 
 
 
