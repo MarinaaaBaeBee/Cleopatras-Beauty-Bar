@@ -54,34 +54,57 @@
 </div>
     
 <main>
-    
+<body>    
 <!-- Contact Form -->
 <form name="contactForm" id="contactForm" action="FormProcess.php" method="post">
-    <!-- Hidden fields for email subject + redirect -->
     <input type="hidden" name="subject" value="Cleopatra's Beauty Bar Contact Submission">
     <input type="hidden" name="redirect" value="contactSent.html">
 
-    <div class="contact-form-container">
-        <h2 class="contact-title">Contact Cleopatra’s Beauty Bar</h2>
+    <div class="contact-wrapper">
+        
+        <!-- Left Column: Icon + Vertical Gold Line -->
+        <div class="contact-left">
+            <div class="icon-circle">
+                <!-- Swap the emoji for an ankh, lotus, or scarab icon -->
+                <span class="cleopatra-icon">✦</span>
+            </div>
+        </div>
 
-        <label for="FirstName">* First Name</label>
-        <input type="text" name="FirstName" id="FirstName" required>
+        <!-- Right Column: Form -->
+        <div class="contact-form-container elegant">
 
-        <label for="LastName">* Last Name</label>
-        <input type="text" name="LastName" id="LastName" required>
+            <h2 class="contact-title">Contact Cleopatra’s Beauty Bar</h2>
 
-        <label for="Telephone">Telephone</label>
-        <input type="text" name="Telephone" id="Telephone">
+            <div class="form-group">
+                <label for="FirstName">First Name *</label>
+                <input type="text" name="FirstName" id="FirstName" required>
+            </div>
 
-        <label for="Email">* Email</label>
-        <input type="email" name="Email" id="Email" required>
+            <div class="form-group">
+                <label for="LastName">Last Name *</label>
+                <input type="text" name="LastName" id="LastName" required>
+            </div>
 
-        <label for="Comments">Comments</label>
-        <textarea name="Comments" id="Comments" rows="5"></textarea>
+            <div class="form-group">
+                <label for="Telephone">Telephone</label>
+                <input type="text" name="Telephone" id="Telephone">
+            </div>
 
-        <div class="button-row">
-            <input type="reset" value="Reset" class="btn-reset">
-            <input type="submit" value="Submit" class="btn-submit">
+            <div class="form-group">
+                <label for="Email">Email *</label>
+                <input type="email" name="Email" id="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Comments">Comments</label>
+                <textarea name="Comments" id="Comments" rows="5"></textarea>
+            </div>
+
+            <div class="button-row">
+                <button type="reset" class="btn-reset">Reset</button>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </div>
+
         </div>
     </div>
 </form>
